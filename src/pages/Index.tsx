@@ -50,7 +50,7 @@ const Index = () => {
                 <TextGenerateEffect words="tech founders to get" />
               </span>
               <br />
-              <span className="font-medium" style={{ color: '#B8DFF9' }}>
+              <span className="text-gradient font-medium">
                 <TextGenerateEffect words="professional websites" />
               </span>
             </h1>
