@@ -7,31 +7,31 @@ import { PricingSection } from "@/components/pricing/PricingSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
+
 const Index = () => {
-  return <div className="min-h-screen bg-black text-foreground">
+  return (
+    <div className="min-h-screen bg-black text-foreground">
       <Navigation />
       
       {/* Hero Section */}
-      <motion.section initial={{
-      opacity: 0,
-      y: 20
-    }} animate={{
-      opacity: 1,
-      y: 0
-    }} transition={{
-      duration: 0.5
-    }} className="relative container px-4 pt-40 pb-20">
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="relative container px-4 pt-40 pb-20"
+      >
         {/* Background */}
         <div className="absolute inset-0 -z-10 bg-[#0A0A0A]" />
         
         <div className="flex flex-col items-center text-center">
+          {/* Badge Section */}
           <motion.div initial={{
-          opacity: 0
-        }} animate={{
-          opacity: 1
-        }} transition={{
-          delay: 0.2
-        }} className="inline-block mb-4 px-4 py-1.5 rounded-full glass">
+            opacity: 0
+          }} animate={{
+            opacity: 1
+          }} transition={{
+            delay: 0.2
+          }} className="inline-block mb-4 px-4 py-1.5 rounded-full glass">
             <span className="text-sm font-medium">
               <Sparkles className="w-4 h-4 inline-block mr-2" />
               AI-powered website builder for founders
@@ -39,15 +39,16 @@ const Index = () => {
           </motion.div>
           
           <div className="max-w-4xl relative z-10">
+            {/* Heading and Description */}
             <motion.h1 initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 0.3
-          }} className="text-5xl md:text-7xl font-normal mb-4 tracking-tight">
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              delay: 0.3
+            }} className="text-5xl md:text-7xl font-normal mb-4 tracking-tight">
               <span className="text-gray-200">
                 The fastest way for
               </span>
@@ -62,27 +63,24 @@ const Index = () => {
             </motion.h1>
             
             <motion.p initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 0.4
-          }} className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+              opacity: 0,
+              y: 20
+            }} animate={{
+              opacity: 1,
+              y: 0
+            }} transition={{
+              delay: 0.4
+            }} className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
               We give you the templates and prompts; Lovable's AI does the rest.{" "}
               <span className="text-white">Launch your startup's website in minutes, not weeks.</span>
             </motion.p>
             
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            delay: 0.5
-          }} className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="flex flex-col sm:flex-row gap-4 items-center justify-center"
+            >
               <Button size="lg" className="button-gradient">
                 Start Building Now
               </Button>
@@ -92,17 +90,18 @@ const Index = () => {
             </motion.div>
           </div>
 
-          <motion.div initial={{
-          opacity: 0,
-          y: 20
-        }} animate={{
-          opacity: 1,
-          y: 0
-        }} transition={{
-          delay: 0.6
-        }} className="relative mx-auto max-w-5xl mt-20">
-            <div className="glass overflow-hidden rounded-none bg-transparent w-screen relative left-1/2 -translate-x-1/2 \n">
-              <img alt="WebFluin Dashboard" className="w-full h-auto" src="/lovable-uploads/e5028882-3e9c-4315-b720-bae1fe817df8.png" />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="relative mx-auto max-w-5xl mt-20"
+          >
+            <div className="overflow-hidden w-screen relative left-1/2 -translate-x-1/2">
+              <img
+                alt="WebFluin Dashboard"
+                className="w-full h-auto"
+                src="/lovable-uploads/e5028882-3e9c-4315-b720-bae1fe817df8.png"
+              />
             </div>
           </motion.div>
         </div>
@@ -159,6 +158,8 @@ const Index = () => {
       <div className="bg-black">
         <Footer />
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
