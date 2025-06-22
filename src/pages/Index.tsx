@@ -26,9 +26,10 @@ const Index = () => {
         
         {/* Gradient blur element */}
         <div 
-          className="absolute left-0 top-0 w-full h-full opacity-70 rounded-full"
+          className="absolute left-0 top-0 w-full h-full rounded-full"
           style={{
-            background: 'linear-gradient(180deg, rgba(55, 122, 251, 0.15) 25%, rgba(255, 255, 255, 0.04) 100%)',
+            background: '#377AFB',
+            opacity: 0.1,
             boxShadow: '300px 300px 300px',
             filter: 'blur(150px)',
             zIndex: 1
