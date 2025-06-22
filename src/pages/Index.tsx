@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -62,16 +61,12 @@ const Index = () => {
             }} transition={{
               delay: 0.3
             }} className="text-5xl md:text-7xl font-normal mb-4 tracking-tight">
-              <span className="text-gray-200">
-                The fastest way for
-              </span>
-              <br />
               <span className="text-white font-medium">
-                tech founders to get
+                The website builder
               </span>
               <br />
               <span className="text-gradient font-medium">
-                professional websites
+                for AI founders.
               </span>
             </motion.h1>
             
