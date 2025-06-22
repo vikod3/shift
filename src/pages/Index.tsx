@@ -61,9 +61,7 @@ const Index = () => {
           }} className="text-5xl md:text-7xl font-normal mb-4 tracking-tight">
               <span className="text-gray-200">The website builder </span>
               <br />
-              <span className="text-white font-medium">
-                tech founders to get
-              </span>
+              
               <br />
               <span className="text-gradient font-medium">for AI founders.</span>
             </motion.h1>
