@@ -24,18 +24,18 @@ const Index = () => {
         {/* Background */}
         <div className="absolute inset-0 -z-10 bg-[#0A0A0A]" />
         
-        {/* New gradient blur element */}
+        {/* Gradient blur element */}
         <div 
           className="absolute left-0 top-0 w-full h-full opacity-70 rounded-full"
           style={{
             background: 'linear-gradient(180deg, rgba(55, 122, 251, 0.15) 25%, rgba(255, 255, 255, 0.04) 100%)',
             boxShadow: '300px 300px 300px',
             filter: 'blur(150px)',
-            zIndex: -5
+            zIndex: 1
           }}
         />
         
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center relative z-10">
           {/* Badge Section */}
           <motion.div initial={{
             opacity: 0
