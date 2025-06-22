@@ -139,28 +139,42 @@ const Index = () => {
       </div>
 
       {/* CTA Section */}
-      <section className="container px-4 py-20 relative bg-black">
-        <div className="absolute inset-0 opacity-40" style={{
-        backgroundImage: 'url("/lovable-uploads/21f3edfb-62b5-4e35-9d03-7339d803b980.png")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }} />
-        <motion.div initial={{
-        opacity: 0,
-        y: 20
-      }} animate={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.5
-      }} className="bg-[#0A0A0A]/80 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section 
+        className="w-full border-t border-white"
+        style={{
+          paddingLeft: '120px',
+          paddingRight: '120px',
+          paddingTop: '80px',
+          paddingBottom: '80px',
+          background: '#3E6FF3',
+          flexDirection: 'column',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          gap: '40px',
+          display: 'inline-flex'
+        }}
+      >
+        <motion.div 
+          initial={{
+            opacity: 0,
+            y: 20
+          }} 
+          animate={{
+            opacity: 1,
+            y: 0
+          }} 
+          transition={{
+            duration: 0.5
+          }} 
+          className="text-center"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Ready to launch your website?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
             Join thousands of founders who have already discovered the power of AI-driven web design.
           </p>
-          <Button size="lg" className="button-gradient">
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-white/90">
             Get Started
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
