@@ -8,7 +8,6 @@ import { PricingSection } from "@/components/pricing/PricingSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const Index = () => {
   return (
@@ -41,19 +40,24 @@ const Index = () => {
           </motion.div>
           
           <div className="max-w-4xl relative z-10">
-            <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="text-5xl md:text-7xl font-normal mb-4 tracking-tight"
+            >
               <span className="text-gray-200">
-                <TextGenerateEffect words="The fastest way for" />
+                The fastest way for
               </span>
               <br />
               <span className="text-white font-medium">
-                <TextGenerateEffect words="tech founders to get" />
+                tech founders to get
               </span>
               <br />
               <span className="text-gradient font-medium">
-                <TextGenerateEffect words="professional websites" />
+                professional websites
               </span>
-            </h1>
+            </motion.h1>
             
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
