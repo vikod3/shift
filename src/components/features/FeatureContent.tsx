@@ -16,7 +16,7 @@ export const FeatureContent = ({
   }} transition={{
     duration: 0.5
   }} className="h-full flex items-center justify-center">
-      <div className="glass rounded-xl overflow-hidden w-full relative">
+      <div className="glass rounded-xl overflow-hidden w-full relative bg-transparent">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
         <div style={{
         width: '100%',
